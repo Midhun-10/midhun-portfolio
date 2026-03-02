@@ -1,0 +1,92 @@
+.exp__timeline {
+  padding-left: 28px;
+  border-left: 1px solid var(--border);
+  position: relative;
+}
+
+.exp__item {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.exp__dot {
+  position: absolute;
+  left: -33px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-light);
+}
+
+.exp__card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px 30px;
+}
+
+.exp__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.exp__role {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.exp__company {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exp__badge {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.exp__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp__bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.68;
+}
+
+.exp__bullet-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 700px) {
+  .exp__card-header {
+    flex-direction: column;
+  }
+  .exp__card {
+    padding: 20px;
+  }
+}
